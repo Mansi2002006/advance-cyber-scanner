@@ -92,4 +92,4 @@ if st.button("Execute Core Scanning Pipeline"):
                     d_col2.download_button("Export Scan JSON (.json)", data=json.dumps(scan_data, indent=2), file_name=f"cyber_report_{target_clean}.json", mime="application/json")
                     
             except Exception as system_ex:
-                st.error(f"Internal Diagnostic Micro-Engine Exception Failure: {str(system_ex)}")
+                 st.error(f"Internal Diagnostic Micro-Engine Exception Failure: {str(system_ex)}")
